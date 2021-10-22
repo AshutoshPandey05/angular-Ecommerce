@@ -10,10 +10,15 @@ export class CartComponent implements OnInit {
   items = this.cartService.getItems();
   checkoutForm = this.formBuilder.group({
     name: '',
-    address: ''});
+    mobile: '',
+    address: '',
+    pin: '',
+  });
 
-  constructor(private cartService: CartService,
-    private formBuilder: FormBuilder) {}
+  constructor(
+    private cartService: CartService,
+    private formBuilder: FormBuilder
+  ) {}
 
   ngOnInit() {}
   onSubmit(): void {
