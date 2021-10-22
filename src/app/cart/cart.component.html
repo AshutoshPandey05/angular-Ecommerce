@@ -12,21 +12,22 @@
 <form [formGroup]="checkoutForm" (ngSubmit)="onSubmit()">
   <div>
     <label for="name"> Name </label>
-    <input id="name" type="text" formControlName="name" />
+    <textarea id="name">Enter your Name</textarea>
   </div>
   <div>
     <label for="mobile"> Mobile No </label>
-    <input id="mobile" type="number" formControlName="mobile" />
+    <textarea id="mobile">Enter your Mobile No</textarea>
   </div>
 
   <div>
     <label for="address"> Your Address </label>
-    <input id="address" type="text" formControlName="address" />
+
+    <textarea id="address">Enter your Address</textarea>
   </div>
 
   <div>
     <label for="pin"> PIN No </label>
-    <input id="pin" type="number" formControlName="pin" />
+    <textarea id="pin">Enter your PIN No</textarea>
   </div>
   <button class="button" type="submit">Purchase</button>
 </form>
